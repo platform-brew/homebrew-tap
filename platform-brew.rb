@@ -10,6 +10,7 @@ class PlatformBrew < Formula
   end
 
   def install
+    chmod 0644, Dir['./brew-*']
     bin.install Dir["./*"]
   end
   
