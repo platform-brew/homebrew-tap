@@ -10,8 +10,10 @@ class PlatformBrew < Formula
   end
 
   def install
-    chmod 0644, Dir['./brew-*']
-    bin.install Dir["./*"]
+    prefix.install Dir["./*"]
+    chmod 0755, prefix + "brew-versions.rb"
+    bin.install_symlink Dir["#{prefix}/brew-*"]
   end
-  
+
 end
+
