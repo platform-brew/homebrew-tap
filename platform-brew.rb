@@ -2,8 +2,8 @@ require 'formula'
 
 class PlatformBrew < Formula
   homepage 'https://github.com/platform-brew/platform-brew'
-  url 'https://github.com/platform-brew/platform-brew/archive/0.2.0.zip'
-  sha1 'fab422788244ecde86b0931da66241d0d1dd03e8'
+  url 'https://github.com/platform-brew/platform-brew/archive/0.2.2.tar.gz'
+  sha256 '9cdb35476cf10571ac5e0643be687478ec884f525f7af01a8da70c4cf328b8f2'
 
   head do
     url 'https://github.com/platform-brew/platform-brew.git'
